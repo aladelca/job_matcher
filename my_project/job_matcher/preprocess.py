@@ -65,5 +65,5 @@ def preprocess_text(
     df[text_col] = df[text_col].apply(clean_text)
     df = get_tokens(df, text_col)
     df = remove_stopwords(df, stopwords, text_col)
-    df = lemmatize_tokens(df, text_col)
+    # df = lemmatize_tokens(df, text_col)
     return df
